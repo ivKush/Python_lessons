@@ -3,6 +3,8 @@
 # длиной m километров? При решении этой задачи
 # нельзя пользоваться условной инструкцией if и циклами.
 
+import math
 n = int(input())
 m = int(input())
-print(-(-m // n))
+# print(-(-m // n))
+print(math.ceil(m/n))

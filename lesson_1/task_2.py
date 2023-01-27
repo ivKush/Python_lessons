@@ -5,8 +5,22 @@
 # в каждом из трех классов. Выведите наименьшее число
 # парт, которое нужно приобрести для них.
 
-a = int(input())
-b = int(input())
-c = int(input())
 
-print(-(-a // 2 + -b // 2 + -c // 2))
+# a = int(input())
+# b = int(input())
+# c = int(input())
+# print(-(-a // 2 + -b // 2 + -c // 2))
+
+import math
+# print(math.ceil(a / 2) + math.ceil(b / 2) + math.ceil(c / 2))
+
+
+classes = int(input('Сколько аудиторий?: '))
+b = 0
+for i in range(classes):
+    a = int(input(f'учеников в {i+1} классе '))
+    a = math.ceil(a / 2)
+    b = a + b
+print(f'нужно {b} шт.')
+
+    
