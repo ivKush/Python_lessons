@@ -14,24 +14,27 @@ else:
     sum_1 = 0
     sum_2 = 0
     for i in ticket[:3]:
-        i = int(i)
-        sum_1 += i 
+        # i = int(i)
+        sum_1 += int(i) 
     for i in ticket[-3:]:
-        i = int(i)
-        sum_2 += i
+        # i = int(i)
+        sum_2 += int(i)
     if sum_1 == sum_2:
         print("это счастливый билет!!!")
     else:
         print("это НЕ счатливый билет :( ")    
 
-    # num_1 = [int(i) for i in ticket[0: 3]]
-    # for i in num_1:
-    #     sum_1 = i + sum_1
-    # num_2 = [int(i) for i in ticket[-3:]]
-    # for i in num_2:
-    #     sum_2 = i + sum_2
-    # if sum_1 == sum_2:
-    #     print("это счастливый билет!!!")
-    # else:
-    #     print("это НЕ счатливый билет :( ")
+
+# num_1 = [int(i) for i in ticket[0: 3]]
+# for i in num_1:
+#     sum_1 = i + sum_1
+# num_2 = [int(i) for i in ticket[-3:]]
+# for i in num_2:
+#     sum_2 = i + sum_2
+# if sum_1 == sum_2:
+#     print("это счастливый билет!!!")
+# else:
+#     print("это НЕ счатливый билет :( ")
+    
+
     
