@@ -5,4 +5,11 @@
 # 3 2 4 -> yes
 # 3 2 1 -> no
 
+size_1 = int(input())
+size_2 = int(input())
+slice = int(input())
+if slice == (size_1 or size_2) or slice % size_1 == 0 or slice % size_2 == 0:
+    print('yes')
+else: 
+    print('no')
 
