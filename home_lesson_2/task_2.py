@@ -20,9 +20,9 @@ print(f'num_1 = {num_1} \nnum_2 = {num_2}')
 print(f'summa = {summ}')
 print(f'multiplication = {mult}')
 
-for i in range(summ + 1):
+for i in range(summ):
     flag = False
-    for j in range(summ + 1):
+    for j in range(summ):
         n = i * j
         if n == mult and i + j == summ: 
             flag = True
