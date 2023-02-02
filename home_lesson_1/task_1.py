@@ -5,6 +5,6 @@
 sum = 0
 num = input()
 for i in num:
-   i = int(i)
-   sum += i
+   # i = int(i)
+   sum += int(i)
 print(sum)

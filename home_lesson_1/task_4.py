@@ -14,3 +14,6 @@ if (slice == (size_1 or size_2) or slice % (size_1 or size_2) == 0 and slice != 
 else: 
     print('no')
 
+# m, n, k = int(input()), int(input()), int(input())
+
+
