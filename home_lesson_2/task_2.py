@@ -21,11 +21,14 @@ print(f'summa = {summ}')
 print(f'multiplication = {mult}')
 
 for i in range(summ + 1):
+    flag = False
     for j in range(summ + 1):
         n = i * j
         if n == mult and i + j == summ: 
-            print(f'{i} \n{j}')
-            exit()
+            flag = True
+            print(f'{i} \n{j}')            
+    if flag == True:
+        break
  
     
        
