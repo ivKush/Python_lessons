@@ -10,19 +10,30 @@
 # -> 5
 import random
 a = []
-[a.append(random.randint(1, 100)) for i in range(1, int(input()) + 1)]
+[a.append(random.randint(-100, 100)) for i in range(1, int(input()) + 1)]
 # a = list(range(1, int(input()) + 1))
 print(*a)
 item = min(a)
 min_dif = x = int(input())
-for i in a:
-    if x > i:             
-        if min_dif > x - i:
-            min_dif = x - i
-            item = i
-    else:
-        if min_dif > i - x:
-            min_dif = i - x    
-            item = i
+if x >= 0:
+    for i in a: # для положительных значений
+        if x > i:             
+            if min_dif > x - i:
+                min_dif = x - i
+                item = i
+        else:
+            if min_dif > i - x:
+                min_dif = i - x    
+                item = i
+else:   # для отрицательныых значений
+    for i in a:
+        if x < i:             
+            if min_dif < x - i:
+                min_dif = x - i
+                item = i
+        else:
+            if min_dif < i - x:
+                min_dif = i - x    
+                item = i
 print(f'Ближайший элемент: {item}')
 
