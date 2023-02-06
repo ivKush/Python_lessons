@@ -4,7 +4,7 @@
 num = int(input())
 print()
 for i in range(num):
-    if 2 ** i > num: 
+    if 2 ** i >= num: 
         break
     print(2 ** i)
     
