@@ -13,6 +13,9 @@ a = []
 print(*a)
 print(a.count(int(input())))
 
+# --------Решение от преподавателя--------------------------------------
+list_nums = [int(input()) for _ in range(int(input()))]
+print(list_nums.count(int(input())))
 
 # a = []
 # for i in range(1, int(input()) + 1):
