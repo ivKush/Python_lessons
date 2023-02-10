@@ -15,7 +15,6 @@ import random
 
 bushes = [random.randint(1, 10) for i in range(int(input()))]
 print(bushes)
-# i = 0
    
 for i in range(len(bushes)):
     if i == 0:
@@ -30,6 +29,27 @@ for i in range(len(bushes)):
         # max_i = i   
 # print(max_i)
 print(max)
+
+# ---------------- решение преподователя -----------------------
+n = int(input())
+bushes = [int(i) for i in input().split()]
+bush_max = 0
+
+for i in range(-1, n - 1):
+    bush_sum = bushes[i - 1] + bushes[i] + bushes[i + 1]
+    if bush_sum > bush_max:
+        bush_max = bush_sum
+
+print(bush_max)
+
+# -------------- хорошее решение студента -------------------------
+'''
+for i in range(len(N)):
+    result_count.append(N[i - 2] + N[i - 1] + N[i])
+
+print(max(result_count))
+'''
+# -------------------------------------------------------
 
 # bushes = [random.randint(1, 10) for i in range(int(input()))]
 # print(bushes)
@@ -59,3 +79,5 @@ print(max)
 #         max = bushes[i - 1] + bushes[i] + bushes[i + 1]
 #     i +=1
 # print(max)
+
+
