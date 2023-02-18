@@ -22,7 +22,7 @@ else: print('Пам парам')
 # a = [(input().split())]
 # # print(a)
 # for i in a[0]:
-#     for j in keys:
+#     for j in char:
 #         if j in i:
 #             quantity.append(i.count(j))
 
