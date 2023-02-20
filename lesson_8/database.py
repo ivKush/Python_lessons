@@ -10,7 +10,10 @@ telephone_directory = [
 
 # print(*telephone_directory, sep="\n")
    
+# new_data_base = [[]] 
 
+def new_telephone_dir(a):
+    telephone_directory.append(a)
 
 
 
