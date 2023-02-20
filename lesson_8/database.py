@@ -1,4 +1,5 @@
 
+
 telephone_directory = [
     ['+7 111', 'Иванов', 'Иван', 'Иванович'], 
     ['+7 222', 'Петров', 'Семен', 'Иванович'], 
@@ -7,6 +8,7 @@ telephone_directory = [
 ]
 
 
+# print(*telephone_directory, sep="\n")
    
 
 
