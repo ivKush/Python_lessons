@@ -2,7 +2,7 @@ import database
 
 def search(arg):
     match = []
-    for i in database.telephone_directory:
+    for i in database.phone_dir:
         # for j in range(len(i)):
         for j in i:
             # print(j.upper())
@@ -10,7 +10,7 @@ def search(arg):
             if arg.upper() == j.upper():
                 match.append(i)
     if len(match) == 0: 
-        return 'no subscriber'
+        return 'такого абонента нет'
     return match
 
 # print(*search(input()))

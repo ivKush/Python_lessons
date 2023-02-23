@@ -17,6 +17,16 @@ a = len(set([i.count(j) for i in input().split() for j in char if j in i]))
 if a == 1: print('Парам пам-пам')
 else: print('Пам парам')
 
+# ---------------------- решение преподавателя ------------------------------
+# alp = "аеёиоуыэюя"
+# word_sug = input().split()
+# vowel_letters = [sum([True for j in word if j.lower() in alp]) for word in word_sug]
+
+# if all(vowel_letters) and len(set(vowel_letters)) == 1:
+#     print("Парам пам-пам")
+# else:
+#     print("Пам парам")
+# # ----------------------------------------------------------------
 
 # quantity = []
 # a = [(input().split())]

@@ -20,7 +20,7 @@ set_1 = set([int(input("элементы: ")) for i in range(int(input("кол-�
 print()
 set_2 = set([int(input("элементы: ")) for i in range(int(input("кол-во элементов: ")))])
 
-print(set_1, set_2)
-print(set.intersection(set_1, set_2))
+print(*set_1, set_2)
+print(*sorted(set.intersection(set_1, set_2)))
 
 
