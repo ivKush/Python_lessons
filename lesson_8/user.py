@@ -46,7 +46,7 @@ def menu_command():
         elif select == '6':
             f = open(
                 'C:/Python/Python_lessons/lesson_8/database_test.txt', 'a', encoding='utf-8')
-            f.write(export_dir.export_phon_dir(result))
+            f.write(export_dir.export_phon_dir(result)) # выводит в файл, только после добавления абонента, нужно добавить выбор от куда выводить (result)
             f.close()
             
         elif select == '7':
