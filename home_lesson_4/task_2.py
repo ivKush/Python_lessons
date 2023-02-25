@@ -13,6 +13,7 @@
 '''
 import random
 
+
 bushes = [random.randint(1, 10) for i in range(int(input()))]
 print(bushes)
    
@@ -30,17 +31,17 @@ for i in range(len(bushes)):
 # print(max_i)
 print(max)
 
-# ---------------- решение преподователя -----------------------
-n = int(input())
-bushes = [int(i) for i in input().split()]
-bush_max = 0
+# # ---------------- решение преподователя -----------------------
+# n = int(input())
+# bushes = [int(i) for i in input().split()]
+# bush_max = 0
 
-for i in range(-1, n - 1):
-    bush_sum = bushes[i - 1] + bushes[i] + bushes[i + 1]
-    if bush_sum > bush_max:
-        bush_max = bush_sum
+# for i in range(-1, n - 1):
+#     bush_sum = bushes[i - 1] + bushes[i] + bushes[i + 1]
+#     if bush_sum > bush_max:
+#         bush_max = bush_sum
 
-print(bush_max)
+# print(bush_max)
 
 # -------------- хорошее решение студента -------------------------
 '''

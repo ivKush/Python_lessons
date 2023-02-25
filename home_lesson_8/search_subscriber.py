@@ -1,8 +1,8 @@
-import database
+import database_test
 
 def search(arg):
     match = []
-    for i in database.phone_dir:
+    for i in database_test.phone_dir:
         # for j in range(len(i)):
         for j in i:
             # print(j.upper())

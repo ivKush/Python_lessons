@@ -1,7 +1,7 @@
 import database   
 
 
-def export_phon_dir(arg):
+def txt_phon_dir(arg):
     phone_dir_txt = ''
     for i in arg:
         people = ''
@@ -11,5 +11,5 @@ def export_phon_dir(arg):
         # print(phone_dir_txt)
     return str(phone_dir_txt)
     
-# print(export_phon_dir(database.phone_dir))
+# print(txt_phon_dir(database.phone_dir))
 
