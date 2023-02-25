@@ -1,7 +1,9 @@
 import database_test
 
-def search(arg):
-    match = []
+def search():
+    arg = input("Напишите искомые данные: ")
+    print()
+    match = 0
     for i in database_test.phone_dir:
         # for j in range(len(i)):
         for j in i:
@@ -9,8 +11,9 @@ def search(arg):
             # if arg == i[j]:
             if arg.upper() == j.upper():
                 match.append(i)
-    if len(match) == 0: 
-        return 'такого абонента нет'
-    return match
-
+                print(i,'\n')
+                match += 1
+    if match == 0: 
+        print('Такого абонента нет \n')
+    # return match
 # print(*search(input()))

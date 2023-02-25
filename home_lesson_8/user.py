@@ -28,11 +28,10 @@ def menu_command():
         '(7) - выйти из программы \n')
         
         if select == '1':
-            print(*search_subscriber.search(input("Напишите искомые данные: ")), sep='\n')
-            
+            # print(*search_subscriber.search(input("Напишите искомые данные: ")), sep='\n')
+            search_subscriber.search()
         elif select == '2':
             # Добавляет абонента в database с проверкой на совпадения абонента (без id)
-            # Добавить проверку на длину номера телефона
             data_collection.data_coll() 
             
         elif select == '3':

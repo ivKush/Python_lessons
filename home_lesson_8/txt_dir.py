@@ -1,4 +1,4 @@
-import database   
+import database  
 
 
 def txt_phon_dir(arg):
