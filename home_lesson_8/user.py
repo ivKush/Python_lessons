@@ -45,8 +45,7 @@ def menu_command():
             # Добавить выбор сохранения (всё, один, несколько)
         elif select == '6':
             # Сделать запрос на местосохранения файла, вместо указанного (стр. 50)
-            f = open(
-                'C:/Python/Python_lessons/home_lesson_8/database_test.txt', 'w', encoding='utf-8')
+            f = open('home_lesson_8/database_test.txt', 'w', encoding='utf-8')
             f.write(txt_dir.txt_phon_dir(database_test.phone_dir)) # выводит в файл txt актуальный database
             f.close()
             
