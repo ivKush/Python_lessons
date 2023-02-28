@@ -15,7 +15,7 @@ def data_coll():
         # return data
         i = 0
         while i < len(database_test.phone_dir):
-            if len(data[4]) != 12 and type(int(data[4][1:])) == 1:
+            if len(data[4]) != 12:  # and type(int(data[4])) == int: # найти как проверить, что номер тел. это цифры (данная конструкция не рабочая)
                 print('Не верно введен номер телефона, нужно 11 цифр, начиная с + ')
                 break
             if data[1:] == database_test.phone_dir[i][1:]:
@@ -26,7 +26,9 @@ def data_coll():
                     break
                 break
             i += 1
-        else:            
+            # t = type(int(data[4][1:])) == 1
+        else:    
+            # сделать проверку на пустую строку        
             database_test.phone_dir.append(data)
             
             f = open('home_lesson_8\database_test.py', 'w', encoding='utf-8')
