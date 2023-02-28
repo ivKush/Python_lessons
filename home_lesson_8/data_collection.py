@@ -7,7 +7,7 @@ def data_coll():
     while flag:
         print("введите данные: ")
         data = [
-            f'{len(database_test.phone_dir) + 1}',
+            f'{int(database_test.phone_dir[-1][0]) + 1}',
             input("фамилия: "),
             input("имя: "),
             input("отчество: "),
