@@ -2,8 +2,9 @@ import database_test
 
 
 def del_subscriber():
+    i = 0
     d = input("Введите id удаляемого абонента: ")
-    for i in range(len(database_test.phone_dir)):
+    while i < len(database_test.phone_dir):
         if database_test.phone_dir[i][0] == d:
             database_test.phone_dir.pop(i)
             f = open('home_lesson_8\database_test.py', 'w', encoding='utf-8')
@@ -11,8 +12,9 @@ def del_subscriber():
             f.close()
             print("Абонент удален")
             break
-        else:
-            print('Такого id нет ')
+        i += 1
+    else:
+        print('Такого id нет ')
         
             
 # del_subscriber()

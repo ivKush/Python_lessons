@@ -15,8 +15,8 @@ def data_coll():
         # return data
         i = 0
         while i < len(database_test.phone_dir):
-            if len(data[4]) != 12:
-                print('Не верно введен номер телефона')
+            if len(data[4]) != 12 and type(int(data[4][1:])) == 1:
+                print('Не верно введен номер телефона, нужно 11 цифр, начиная с + ')
                 break
             if data[1:] == database_test.phone_dir[i][1:]:
                 print('Данный абонент существует')

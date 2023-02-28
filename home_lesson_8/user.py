@@ -2,7 +2,6 @@ import search_subscriber
 import data_collection
 import database   
 import txt_dir
-from os import path
 import database_test
 import delit
 import change_data
@@ -13,7 +12,6 @@ import change_data
 
 
 def menu_command():
-    result = []
     start = True
     while start:
         # global select 
@@ -28,7 +26,6 @@ def menu_command():
         '(7) - выйти из программы \n')
         
         if select == '1':
-            # print(*search_subscriber.search(input("Напишите искомые данные: ")), sep='\n')
             search_subscriber.search()
         elif select == '2':
             # Добавляет абонента в database с проверкой на совпадения абонента (без id)
