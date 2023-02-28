@@ -10,10 +10,11 @@ def search():
             # print(j.upper())
             # if arg == i[j]:
             if arg.upper() == j.upper():
-                match.append(i)
+                # match.append(i)
                 print(i,'\n')
                 match += 1
     if match == 0: 
         print('Такого абонента нет \n')
     # return match
 # print(*search(input()))
+
